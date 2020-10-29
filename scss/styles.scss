@@ -33,7 +33,6 @@ body {
 
 .sub-heading {
     font: normal normal 600 1.5rem/2rem Poppins;
-    
 }
 
 .normal-text {
@@ -53,34 +52,40 @@ button {
     margin-top: 6em;
     display: flex;
     flex-direction: column;
-    #image-1 {
+    #text-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #video_player {
         width: 100%;
+        max-width: 600px;
     }
-    #hero_row {
+    .heading {
         gap: 3em;
-        font: normal normal 700 2.5rem/3rem Poppins;
+        font: normal normal 800 2.5rem/3rem Poppins;
     }
-        .card {
-            border-radius: 0 20px 20px 0;
-            border: none;
-        }
-        .card-body {
-            padding: 20px 0px;
-        }
-        .card-img {
-            max-width: 80px;
-            min-width: 50px;
-        }
-        .card-text {
-            text-align: center;
-            min-width: 8em;
-        }
-    
+    .card {
+        border-radius: 0 20px 20px 0;
+        border: none;
+    }
+    .card-body {
+        padding: 20px 0px;
+    }
+    .card-img {
+        max-width: 80px;
+        min-width: 50px;
+    }
+    .card-text {
+        text-align: center;
+        min-width: 8em;
+    }
 }
 
 #section_2 {
     .card {
         min-width: 200px;
+        border: none;
     }
     #text-col {
         display: flex;
@@ -99,20 +104,23 @@ button {
             font: normal normal 600 2rem Poppins;
         }
         .card {
-        border: none;
-        .card-img-top {
-            align-self: center;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card-img-top {
+                align-self: center;
+            }
         }
-    }
-    .card-body {
-        padding: 0px;
-        text-align: center;
-        .card-title {
-            margin: 0px;
-            color: $blue;
-            font: normal normal 600 1rem Poppins;
+        .card-body {
+            padding: 0px;
+            text-align: center;
+            .card-title {
+                margin: 0px;
+                color: $blue;
+                font: normal normal 600 1rem Poppins;
+            }
         }
-    }
     }
     .circle {
         position: relative;
@@ -120,7 +128,7 @@ button {
         height: 200px;
         overflow: hidden;
         border-radius: 50%;
-        
+
         img {
             width: 100%;
             height: 100%;
@@ -130,16 +138,28 @@ button {
 }
 
 #section_3 {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card {
+        border: none;
+    }
+    button {
+        width: 200px;
+    }
     #video_player {
         width: 100%;
         max-width: 600px;
     }
-    
 }
 
 #section_4 {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        width: 200px;
+    }
     #video_player {
         width: 100%;
         max-width: 600px;
@@ -147,7 +167,12 @@ button {
 }
 
 #section_5 {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        width: 200px;
+    }
     #video_player {
         width: 100%;
         max-width: 600px;
@@ -263,6 +288,12 @@ button {
 }
 
 #section_10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        width: 250px;
+    }
     #video_player {
         width: 100%;
         max-width: 600px;
