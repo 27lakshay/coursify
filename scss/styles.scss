@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$blue: rgb(30, 66, 146);
+$red: rgb(214, 11, 60);
+$white: rgb(239, 244, 246);
+$grey: rgb(75, 75, 75);
+$color1: rgb(254, 197, 161);
+$color2: rgb(241, 212, 212);
+$color3: rgb(254, 233, 178);
+$color4: rgb(176, 222, 254);
+
+* {
+    outline: 1px solid blue;
+    font-family: "Poppins";
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.navbar {
+    height: auto;
+    #brandlogo {
+        width: 40px;
+    }
+}
+
+.heading {
+    font: normal normal 700 2.5rem/3rem Poppins;
+    text-align: center;
+}
+
+.sub-heading {
+    font: normal normal 600 1.5rem/2rem Poppins;
+    
+}
+
+.normal-text {
+    font: normal normal 500 1rem/1.2rem Poppins;
+}
+
+.color-words {
+    color: $blue;
+}
+
+button {
+    color: white !important;
+    background-color: $red !important;
+}
+
+#section_1 {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    #image-1 {
+        width: 100%;
+    }
+    #hero_row {
+        gap: 3em;
+        font: normal normal 700 2.5rem/3rem Poppins;
+    }
+        .card {
+            border-radius: 0 20px 20px 0;
+            border: none;
+        }
+        .card-body {
+            padding: 20px 0px;
+        }
+        .card-img {
+            max-width: 80px;
+            min-width: 50px;
+        }
+        .card-text {
+            text-align: center;
+            min-width: 8em;
+        }
+    
+}
+
+#section_2 {
+    .card {
+        min-width: 200px;
+    }
+    #text-col {
+        display: flex;
+        flex-direction: column;
+    }
+    #image-1 {
+        width: 100%;
+        max-width: 470px;
+    }
+    .card-img {
+        max-width: 80px;
+        min-width: 55px;
+    }
+    #row_circle {
+        #text {
+            font: normal normal 600 2rem Poppins;
+        }
+        .card {
+        border: none;
+        .card-img-top {
+            align-self: center;
+        }
+    }
+    .card-body {
+        padding: 0px;
+        text-align: center;
+        .card-title {
+            margin: 0px;
+            color: $blue;
+            font: normal normal 600 1rem Poppins;
+        }
+    }
+    }
+    .circle {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+#section_3 {
+    height: auto;
+    #video_player {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+}
+
+#section_4 {
+    height: auto;
+    #video_3 {
+        width: 100%;
+    }
+}
+
+#section_5 {
+    height: auto;
+    #video_4 {
+        width: 100%;
+    }
+}
+
+#section_6 {
+    height: auto;
+    .row {
+        .card {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px 5px 5px 5px;
+            border: none;
+            .card-body {
+                padding: 0px;
+                text-align: center;
+                .card-title {
+                    margin: 0px;
+                    color: $blue;
+                    font: normal normal 600 1rem Poppins;
+                }
+            }
+        }
+    }
+    img {
+        height: 50%;
+    }
+}
+
+#section_7 {
+    img {
+        width: 50%;
+    }
+    .card {
+        width: 8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+    .card-body {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        .card-title {
+            margin: 0px;
+            color: $blue;
+            font: normal normal 600 1rem Poppins;
+        }
+    }
+}
+
+#section_8 {
+    img {
+        width: 50%;
+    }
+    .card {
+        width: 10em;
+        border: none;
+        img {
+            align-self: center;
+        }
+    }
+    .card-body {
+        padding: 0px;
+        text-align: center;
+        .card-title {
+            margin: 0px;
+            color: $blue;
+            font: normal normal 600 1rem Poppins;
+        }
+    }
+}
+
+#section_9 {
+    #cover_card {
+        border: none;
+    }
+    #image_bg {
+        display: flex;
+        align-items: center;
+        max-width: 200px;
+    }
+    #inner_card {
+        border: none;
+        .card-title {
+            color: $blue;
+            font: normal normal 800 20px Poppins;
+            margin: none;
+        }
+        .card-text {
+            color: $blue;
+            font: normal normal 500 15px Poppins;
+            margin: none;
+        }
+    }
+    .circle {
+        position: relative;
+        height: 90%;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: black;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+#section_10 {
+    height: auto;
+    #video_5 {
+        width: 100%;
+    }
+}
