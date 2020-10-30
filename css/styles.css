@@ -5,11 +5,25 @@ body {
 }
 
 .navbar {
+  z-index: 100;
   height: auto;
+  font: normal normal 500 1rem/1.2rem Poppins;
 }
 
 .navbar #brandlogo {
   width: 40px;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+  background-color: #d60b3c;
+  -webkit-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 
 .heading {
@@ -47,7 +61,7 @@ button {
 
 @media (max-width: 992px) {
   .mobileMenu {
-    z-index: 100;
+    z-index: 99;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -69,7 +83,7 @@ button {
             transform: translateX(0);
   }
   .overlay {
-    z-index: 100;
+    z-index: 98;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -154,6 +168,8 @@ button {
 #section_1 .card {
   border-radius: 0 20px 20px 0;
   border: none;
+  width: 220px;
+  max-height: 140px;
 }
 
 #section_1 .card-body {
@@ -161,12 +177,14 @@ button {
 }
 
 #section_1 .card-img {
-  max-width: 80px;
+  max-width: 60px;
   min-width: 50px;
 }
 
 #section_1 .card-text {
   text-align: center;
+  color: #4b4b4b;
+  font: normal normal 600 1rem/1.2rem Poppins;
   min-width: 8em;
 }
 
@@ -315,13 +333,12 @@ button {
   max-width: 600px;
 }
 
-#section_6 {
-  height: auto;
+#section_6 img {
+  width: 50%;
 }
 
-#section_6 .row .card {
-  height: 100px;
-  width: 100px;
+#section_6 .card {
+  width: 8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,23 +349,23 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px 5px 5px 5px;
   border: none;
 }
 
-#section_6 .row .card .card-body {
+#section_6 .card-body {
   padding: 0px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#section_6 .row .card .card-body .card-title {
+#section_6 .card-body .card-title {
   margin: 0px;
   color: #1e4292;
   font: normal normal 600 1rem Poppins;
-}
-
-#section_6 img {
-  height: 50%;
 }
 
 #section_7 img {
