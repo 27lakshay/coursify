@@ -13,12 +13,41 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start fixed-top">
+            <a class="navbar-brand order-0 order-lg-0 ml-lg-0 mr-auto" href="#">
+                <img id="brandlogo" src="assets/c.svg"></img>
+                <span id="brandtext">Coursify</span>
+            </a>
+            <button class="navbar-toggler align-self-start" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row
+             justify-content-lg-end bg-dark p-3 p-lg-0 mt-5 mt-lg-0 mobileMenu
+             onRight
+             " id="navbarNav">
+                <ul class="navbar-nav align-self-stretch">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+        <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand " href="#">
-                    <img id="brandlogo" src="assets/c.svg">Coursify</img>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="#navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+                    <img id="brandlogo" src="assets/c.svg"></img>
+                    <span id="brandtext">Coursify</span></a>
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="#navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
@@ -38,13 +67,13 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
     <main>
-        <div id="section_1" class="container-fluid">
+        <div id="section_1" class="container">
             <div class="row align-items-center ">
                 <div id="text-col" class="col-12 col-sm-12 col-md-5">
-                    <div class="heading">Clarify your <span class="color-words">doubts</span> in your language.</div>
+                    <div class="heading mb-4" style="text-align: left;">Clarify your <span class="color-words">doubts</span> in your language.</div>
                     <button type="button" class="btn" style="width: 200px;">Ask your doubt now</button>
                 </div>
                 <div class="col-12 col-sm-12 col-md-7  d-flex justify-content-center">
@@ -111,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div id="section_2" class="container-fluid">
+        <div id="section_2" class="container">
             <div class="row align-items-center mb-5">
                 <div id="text-col" class="col-12 col-sm-12 col-md-6">
                     <div class="heading mb-4">Solve your doubts <span class="color-words">faster</span>.</div>
@@ -181,7 +210,7 @@
                 </div>
             </div>
         </div>
-        <div id="section_3" class="container-fluid">
+        <div id="section_3" class="container">
             <div class="heading mt-5"><span class="color-words ">LIVE</span> Classes</div>
             <div class="row align-items-center ">
                 <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
@@ -222,7 +251,7 @@
             <div id="text" class="sub-heading mb-2 d-flex justify-content-center"><span class="color-words">FIRST CLASS FREE!</span></div>
             <button type="button" class="btn mb-5 shadow">Book a class now!</button>
         </div>
-        <div id="section_4" class="container-fluid">
+        <div id="section_4" class="container">
             <div class="heading mt-5"><span class="color-words">JEE</span> Mains & Advanced Preparation</div>
             <div class="row align-items-center ">
                 <div class="col-12 col-sm-12 col-md-7  d-flex justify-content-center">
@@ -237,7 +266,7 @@
             </div>
             <button type="button" class="btn mb-5 mt-3 shadow">Prepare for JEE now!</button>
         </div>
-        <div id="section_5" class="container-fluid">
+        <div id="section_5" class="container">
             <div class="heading mt-5"><span class="color-words">NEET</span> Preparation</div>
             <div class="row align-items-center ">
                 <div class="col-12 col-sm-12 col-md-7  d-flex justify-content-center">
@@ -252,19 +281,19 @@
             </div>
             <button type="button" class="btn mt-3 mb-5 shadow">Prepare for NEET now!</button>
         </div>
-        <div id="section_6" class="container-fluid">
+        <div id="section_6" class="container">
             <div class="heading mt-5 mb-5"><span class="color-words">Explore the subjects with us!</span></div>
             <div class="row mb-2 d-flex justify-content-center">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/maths.svg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <label class="card-title">Maths</label>
+                            <label class="card-title ">Maths</label>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/physics.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Physics</label>
@@ -272,7 +301,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/chemistry.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Chemistry</label>
@@ -280,7 +309,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/biology.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Biology</label>
@@ -290,14 +319,14 @@
             </div>
             <div class="normal-text mb-5" style="text-align: center;">View all</div>
         </div>
-        <div id="section_7" class="container-fluid">
+        <div id="section_7" class="container">
             <div class="heading mt-5 mb-2"><span class="color-words">Free access</span> to 5000+ books</div>
             <div class="normal-text mb-4" style="text-align: center;">Get access to virtual library of 5000+ text books<br />
                 and reference books of various stateboards and competitive exams.
             </div>
             <div class="row mb-5 d-flex justify-content-center">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">HC Verma</label>
@@ -305,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">NCERT</label>
@@ -313,7 +342,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">KC Sinha</label>
@@ -321,7 +350,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Errorless</label>
@@ -329,7 +358,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">McGraw Hill</label>
@@ -338,7 +367,7 @@
                 </div>
                 <div class="w-100 d-none d-sm-none d-lg-block"></div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">RD Sharma</label>
@@ -346,7 +375,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Pradeep's</label>
@@ -354,7 +383,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">SL Arora</label>
@@ -362,7 +391,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Maths</label>
@@ -370,7 +399,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/open-book.svg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Maths</label>
@@ -379,13 +408,13 @@
                 </div>
             </div>
         </div>
-        <div id="section_8" class="container-fluid">
+        <div id="section_8" class="container">
             <div class="heading mt-5 mb-2"><span class="color-words">State Boards</span></div>
             <div class="normal-text mb-4" style="text-align: center;">Learn your board syllabus from the best teachers with us.
             </div>
             <div class="row mb-5 d-flex justify-content-center">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/maharashtra.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Maharashtra</label>
@@ -393,7 +422,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/punjab.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Punjab</label>
@@ -401,7 +430,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/andha_pradesh.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Andhra Pradesh</label>
@@ -409,7 +438,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/west_bengal.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">West Bengal</label>
@@ -417,7 +446,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/uttar_pradesh.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Uttar Pradesh</label>
@@ -426,7 +455,7 @@
                 </div>
                 <div class="w-100 d-none d-sm-none d-lg-block"></div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/kerala.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Kerala</label>
@@ -434,7 +463,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/rajasthan.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Rajasthan</label>
@@ -442,7 +471,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/gujarat.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Gujarat</label>
@@ -450,7 +479,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/tamil_nadu.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Tamil Nadu</label>
@@ -458,7 +487,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3 d-flex justify-content-center">
-                    <div class="card shadow">
+                    <div class="card shadow hover-item">
                         <img src="assets/madha_pradesh.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <label class="card-title">Madha Pradesh</label>
@@ -467,7 +496,7 @@
                 </div>
             </div>
         </div>
-        <div id="section_9" class="container-fluid">
+        <div id="section_9" class="container">
             <div class="heading mt-5 mb-4">Meet our expert tutors</div>
             <div class="row mb-5">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
@@ -548,7 +577,7 @@
                 </div>
             </div>
         </div>
-        <div id="section_10" class="container-fluid">
+        <div id="section_10" class="container">
             <div class="heading mt-5">See what our students have to say</div>
             <div class="row align-items-center ">
                 <div class="col-12 col-sm-12 col-md-7  d-flex justify-content-center">
@@ -577,9 +606,22 @@
             <button type="button" class="btn shadow mb-5">Download the app for free!</button>
         </div>
     </main>
-    <footer>
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        // $(function () {
+        //     $(document).scroll(function () {
+        //         var $nav = $(".fixed-top");
+        //         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        //     })
+        // })
+        $(document).ready(function () {
+            $(".navbar-toggler, .overlay").on("click", function () {
+                $(".mobileMenu, .overlay").toggleClass("open");
+            });
+        });
+    </script>
 </body>
 
 </html>
